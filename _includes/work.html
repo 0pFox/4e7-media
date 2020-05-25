@@ -5,8 +5,7 @@
     <img class="mobile" src="https://res.cloudinary.com/media4e7/image/upload/v1560353453/4e7_work_boa1bb.svg">
     <!--<i class="fas fa-chevron-left w-slidebtn-o" style="display:none;"></i>-->
     <div class="fp-controlArrow fp-prev w-prev"></div>
-    <div class="tn-cont work-cont owl-carousel owl-theme">
-        
+    <div class="tn-cont work-cont owl-carousel owl-theme">   
         {% assign sorted = (site.work | sort: 'date') %} {% for post in sorted %}
         <a class="img-cont w-img" href="{{ post.url }}" style="background-image: url('{{site.cloud_host}}{{ post.tnimg }}');">
             <!--<p class="mobile mobile-title">{{ post.title}}</p>-->
@@ -18,5 +17,6 @@
         
     </div>
     <div class="fp-controlArrow fp-next w-next"></div>
-    <!--<i class="fas fa-chevron-right w-slidebtn-c"></i>-->
+    <!--<i class="fas fa-chevron-right w-slidebtn-c test"></i>-->
+
 </div>
